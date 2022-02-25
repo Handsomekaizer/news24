@@ -28,7 +28,7 @@ function reducer(state, action) {
 export default function GetJobs(search, page, pageSize) {
   const [state, dispatch] = useReducer(reducer, { data: [], loading: true });
 
-  let keyword = search !== '' ? search.trim() : 'Technology';
+  let keyword = search !== '' ? search.trim() : 'Entertainment';
 
   useEffect(() => {
     dispatch({ type: actions.MAKE_REQUEST });
