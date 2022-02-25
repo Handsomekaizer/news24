@@ -9,11 +9,11 @@ function Pagination({ page, setPage, totalResults, pageSize }) {
   if (totalPages === 1) {
     return null;
   }
-  if (totalPages < 10) {
+  if (totalPages < 100) {
     start = 1;
     end = totalPages;
   } else {
-    if (page <= 6) {
+    if (page <= 100) {
       start = 1;
       end = 10;
     } else if (page + 4 >= totalPages) {
