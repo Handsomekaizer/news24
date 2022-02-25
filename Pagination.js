@@ -17,7 +17,7 @@ function Pagination({ page, setPage, totalResults, pageSize }) {
       start = 1;
       end = 100;
     } else if (page + 4 >= totalPages) {
-      start = totalPages - 9;
+      start = totalPages - 900;
       end = totalPages;
     } else {
       start = page - 5;
